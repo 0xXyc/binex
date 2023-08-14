@@ -23,12 +23,11 @@ int main()
 
     printf("Please enter the secret code: \n");
     gets(code);
+    fflush(stdout);
 
     if(strcmp(code, "1337") == 0)
     {
         flag = hacked();
-
-        // hacked();
 
         access = 1;
     }
@@ -40,9 +39,9 @@ int main()
 
     if(access)
     {
-    printf("Authentication successful as root (access level=%d) \n", access);
-    printf("You are root, granting access... \nAccess granted, welcome root.\n");
-    printf("Wow, you realized we could overflow the buffer and you could still get the flag? Nice.\nHere's your flag: %s", flag);
+        printf("Authentication successful as root (access level=%d) \n", access);
+        printf("You are root, granting access... \nAccess granted, welcome root.\n");
+        printf("Wow, you realized we could overflow the buffer and you could still get the flag? Nice.\nHere's your flag: %s", flag);
     }
 
     else
