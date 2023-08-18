@@ -4,4 +4,6 @@ This is a typical ret2win challenge. We must return to another function in order
 
 Be sure to utilize the command 'pwn template' to structure your exploit for this challenge!
 
+This is a direct copy from CryptoCat's challenge. It's truly perfect, no need to change.
+
 Compile: gcc 02.c -o 02 -m32 -fno-stack-protector -z execstack -no-pie -g
